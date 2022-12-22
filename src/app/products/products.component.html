@@ -1,0 +1,24 @@
+<div class="banner">
+    <br>
+    <h3>VIEW PRODUCTS</h3><br>
+    <table class="table table-hover" >
+        <tr class="bg text-white" id="btn">
+            <td>PRODUCT ID</td>
+            <td>PRODUCT NAME</td>
+            <td>CATEGORY</td>
+            <td>BASE PRICE</td>
+            
+        </tr>
+        <br>
+        <tr *ngFor="let s of seller">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.category}}</td>
+            <td>{{s.price}}</td>
+            
+        </tr>
+        <br>
+        <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/customercreate']" role="button"> Back </a>
+    </table>
+    <span class="text-success">{{message}}</span>
+    </div>

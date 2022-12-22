@@ -1,0 +1,27 @@
+<div class="banner">
+    <div class="container">
+        <br>
+        <h3> VIEW PRODUCT DETAILS</h3>
+        <br><br><br>
+        <div class="row">
+            <div>
+                <div>
+                    <label><b> Product Name: </b></label> {{seller.name}}
+                </div>
+                <div>
+                    <label><b> Product ID: </b></label> {{seller.id}}
+                </div>
+                <div>
+                    <label><b> Product Category: </b></label> {{seller.category}}
+                </div>
+                <div>
+                    <label><b> Product Base Price: </b></label> {{seller.price}}
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/sellergetall']" role="button"> Back </a>
+        </div>
+    </div>
+</div>

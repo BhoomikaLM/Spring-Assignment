@@ -1,0 +1,28 @@
+<div class="banner">
+<br>
+<h3>ALL SELLERS</h3><br>
+<table class="table table-hover" >
+    <tr class="bg text-white" id="btn">
+        <td>PRODUCT ID</td>
+        <td>PRODUCT NAME</td>
+        <td>CATEGORY</td>
+        <td>BASE PRICE</td>
+        <td>OPERATIONS</td>
+    </tr>
+    <br>
+    <tr *ngFor="let s of seller">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.category}}</td>
+        <td>{{s.price}}</td>
+        <td>
+            <button id="danger" class="btn btn-danger" (click)="deleteSeller(s.id)">DELETE</button> |
+            <button id ="info" class="btn btn-info" (click)="editSeller(s.id)">EDIT</button> |
+            <button id="details" class="btn btn-primary" (click)="detailsSeller(s.id)">DETAILS</button>
+        </td>
+    </tr>
+    <br>
+    <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/sellercreate']" role="button"> Back </a>
+</table>
+<span class="text-success">{{message}}</span>
+</div>

@@ -1,0 +1,74 @@
+<div class="banner">
+    <br>
+    <h3>SELLER SERVICES</h3>
+    <br>
+    <div class="container">
+        <form (ngSubmit)="createSeller()">
+            <!-- row#1 -->
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <label>Product Name</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" [(ngModel)]="seller.name" name="name" class="form-control" />
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- row#2 -->
+                    <div class="row">
+                        <div class="col-12">
+                            <label>Product ID</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="number" [(ngModel)]="seller.id" name="id" class="form-control" />
+                        </div>
+                    </div>
+                    <br>
+                    <!-- row#3 -->
+                    <div class="row">
+                        <div class="col-12">
+                            <label>Select Category of the Product</label>
+                        </div>
+                        <div class="col-12">
+                            <select [(ngModel)]="seller.category" class="form-select" name="category"
+                                class="form-control">
+                                <option>-select-</option>
+                                <option value="Fashion">Fashion</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Footwear">Footwear</option>
+                                <option value="Grocery">Grocery</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- row#4 -->
+                    <div class="row">
+                        <div class="col-12">
+                            <label>Base Price</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="number" [(ngModel)]="seller.price" name="price" class="form-control" />
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id="button">
+                        <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/sellerLogin']" role="button">Back
+                        </a> |
+                        <input type="submit" class="btn btn-primary btn-lg" value="Add Product" id="btn" /> |
+                        <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/sellergetall']" role="button">View
+                            All Products
+                        </a>
+                    </div>
+                    <span class="text-info">{{message}}</span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </form>
+    </div>
+
+</div>

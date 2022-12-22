@@ -1,0 +1,30 @@
+<div class="banner">
+    <div class="container">
+        <br>
+        <h3> VIEW CUSTOMER DETAILS</h3>
+        <br><br><br>
+        <div class="row">
+            <div>
+                <div>
+                    <label><b> Customer Name: </b></label> {{customer.customer_name}}
+                </div>
+                <div>
+                    <label><b> Customer ID: </b></label> {{customer.customer_id}}
+                </div>
+                <div>
+                    <label><b> Product ID: </b></label> {{customer.product_id}}
+                </div>
+                <div>
+                    <label><b> Category: </b></label> {{customer.category}}
+                </div>
+                <div>
+                    <label><b> Bidding Price: </b></label> {{customer.bidding_price}}
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/customergetall']" role="button"> Back </a>
+        </div>
+    </div>
+</div>

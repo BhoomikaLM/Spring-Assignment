@@ -1,0 +1,22 @@
+.botton {
+    text-align: center;
+}
+
+.buttons {
+    font-size: 10px;
+}
+
+#button {
+    text-align: center;
+}
+
+#danger{
+    color: brown;
+}
+#info {
+    color:rgb(82, 165, 165);
+}
+
+#details {
+    color:cornflowerblue;
+}

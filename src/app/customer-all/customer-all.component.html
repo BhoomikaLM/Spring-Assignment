@@ -1,0 +1,30 @@
+<div class="banner">
+    <br>
+    <h3>ALL CUSTOMERS</h3><br>
+    <table class="table table-hover" >
+        <tr class="bg text-white" id="btn">
+            <td>CUSTOMER NAME</td>
+            <td>CUSTOMER ID</td>
+            <td>PRODUCT ID</td>
+            <td>CATEGORY</td>
+            <td>BIDDING PRICE</td>
+            <td>OPERATIONS</td>
+        </tr>
+        <br>
+        <tr *ngFor="let c of customer">
+            <td>{{c.customer_name}}</td>
+            <td>{{c.customer_id}}</td>
+            <td>{{c.product_id}}</td>
+            <td>{{c.category}}</td>
+            <td>{{c.bidding_price}}</td>
+            <td>
+                <button id="danger" class="btn btn-danger" (click)="deleteCustomer(c.customer_id)">DELETE</button> |
+                <button id ="info" class="btn btn-info" (click)="editCustomer(c.customer_id)">EDIT</button> |
+                <button id="details" class="btn btn-primary" (click)="detailsCustomer(c.customer_id)">DETAILS</button>
+            </td>
+        </tr>
+        <br>
+        <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/customercreate']" role="button"> Back </a>
+    </table>
+    <span class="text-success">{{message}}</span>
+    </div>

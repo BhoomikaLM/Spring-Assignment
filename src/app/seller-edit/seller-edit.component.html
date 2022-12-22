@@ -1,0 +1,67 @@
+<div class="banner">
+<br>
+<h3>EDIT PRODUCT DETAILS</h3>
+<br>
+<div class="container">
+    <form (ngSubmit)="updateSeller()">
+        <!-- row#1 -->
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+            <div class="row">
+                <div class="col-12">
+                    <label>Product ID</label>
+                </div>
+                <div class="col-12">
+                    <input type="text" [(ngModel)]="seller.id" name="id" class="form-control" />
+                </div>
+            </div>
+            <br>
+
+            <!-- row#2 -->
+            <div class="row">
+                <div class="col-12">
+                    <label>Product NAME</label>
+                </div>
+                <div class="col-12">
+                    <input type="text" [(ngModel)]="seller.name" name="name" class="form-control" />
+                </div>
+            </div>
+            <br>
+            <!-- row#3 -->
+            <div class="row">
+                <div class="col-12">
+                    <label>Select Category of the Product</label>
+                </div>
+                <div class="col-12">
+                    <select [(ngModel)]="seller.category" name="category" class="form-control">
+                        <option value="">-select-</option>
+                        <option value="Fashion">Fashion</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Footwear">Footwear</option>
+                        <option value="Grocery">Grocery</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <!-- row#4 -->
+            <div class="row">
+                <div class="col-12">
+                    <label>Price</label>
+                </div>
+                <div class="col-12">
+                    <input type="text" [(ngModel)]="seller.price" name="price" class="form-control" />
+                </div>
+            </div>
+            <br>
+            <div id="button">
+                <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/sellergetall']" role="button"> Back </a>  |
+                <input type="submit" class="btn btn-primary btn-lg" value="Edit Product" id="btn" />
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+        
+    </form>
+</div>
+</div>

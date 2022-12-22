@@ -1,0 +1,23 @@
+<body>
+    <br><br><br>
+    <div class="container">
+        <br>
+        <h3>CUSTOMER LOGIN</h3>
+        <br><br>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <label for="name" class="form-label">Name</label> <input type="text" class="form-control" id="name"
+                    placeholder="Registerd name" value="" required>
+                <br>
+                <label for="password" class="form-label">Password</label> <input type="password" class="form-control"
+                    id="password" placeholder="********" value="" required>
+            </div>
+            <div class="col-md-1"></div>    
+        </div>
+        <br>
+        <div class="botton">
+            <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/customercreate']" role="button">Submit</a>
+        </div>
+    </div>
+</body>
